@@ -10,3 +10,13 @@ console.log(" line 8 "+challenge);
 console.log(challenge.includes("of")); //question8
 console.log(challenge.split(' '));  // question9
 
+for(var i=1; i<5; i++){
+	var array = [];
+	array.push(i);
+	for(var p=0; p<5; p++){
+		array.push(Math.pow(p,i)); 
+	}
+	console.log(array);           // question11
+}
+
+
