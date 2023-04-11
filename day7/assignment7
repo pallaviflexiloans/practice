@@ -1,3 +1,8 @@
+function fname(name){
+    console.log(name);
+}
+fname("pallavi"); //question1
+
 function fullName(firstname,lastname){
     space = " ";
     return fullName = firstname+space+lastname;
@@ -5,10 +10,28 @@ function fullName(firstname,lastname){
 fullName("pallavi","sharma");
 console.log(fullName);  //question2
 
+function addNumbers(firstNo, secondNo){
+    return firstNo+secondNo;
+}
+console.log(addNumbers(34,4)); //question3
+function areaRectangle(length,width){
+    return area = length*width;
+
+}
+function perimeterRectangle(length,width){
+    return perimeter= 2*(length + width);
+}
+console.log(perimeterRectangle(2,3)); //question5
+
+
+
+console.log(areaRectangle(4,6)); //question4
 function reverseArray( array ){
+    reverseArray = [];
     for(i=array.length-1;i<=0;i--){
-        reverseArray.push((array[i]));
+        return reverseArray.push((array[i]));
     }
 }
-console.log(reverseArray([23,25,26,27]));
+reverseArray([23,25,26,27]);
+console.log(reverseArray);
 
