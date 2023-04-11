@@ -18,19 +18,85 @@ function areaRectangle(length,width){
     return area = length*width;
 
 }
+console.log(areaRectangle(4,6)); //question4
 function perimeterRectangle(length,width){
     return perimeter= 2*(length + width);
 }
 console.log(perimeterRectangle(2,3)); //question5
 
+function volumeOfRectangularPrism(length,width,height){
+   return volume = length * width * height;
+}
+console.log(volumeOfRectangularPrism(2,3,5)); //question6
+
+function areaCircle(r){
+    const pi = 3.14;
+    return area = pi * r * r;
+}
+console.log(areaCircle(2)); // question7
+function circumferenceOfCircle(radius){
+    const pi = 3.14;
+    return 2*pi*radius;
+}
+console.log(circumferenceOfCircle(2)); //question8
+
+function densityOfSubstance(mass,volume){
+    return density= mass/volume;
+}
+console.log(densityOfSubstance(4,2)); //question9
+
+function calculateSpeed(distance,time){
+    return speed = distance/time;
+}
+console.log(calculateSpeed(4,2)); // question10
+
+function weightOfSubstance(mass,gravity){
+    return weight = mass * gravity;
+}
+console.log(weightOfSubstance(2,4)); //question11
+
+function convertCelsiusToFahrenheit(oC){
+    return  oF = (oC * 9/5) + 32;
+}
+console.log("temperature in fahrenheit is " + convertCelsiusToFahrenheit(2)); //question12
+
+function calculateBMI (weightInKg,height){
+     bmi = weightInKg / (height * height);
+switch(bmi){
+    case 0:
+    bmi < 18.5;
+    console.log("Underweight");
+    break;
+    case 1:
+    18.5<bmi<24.9;
+    console.log("Normal");
+    break;
+    case 2:
+    25<bmi<29.9;
+    console.log("Overweight");
+    break;
+    case 3:
+    bmi>30;
+    console.log("Obese");
+    break;
+}
+}
+console.log(calculateBMI(55,5.5)); //question13 not working
 
 
-console.log(areaRectangle(4,6)); //question4
+
+
+
+
+
+
+
 function reverseArray( array ){
     reverseArray = [];
-    for(i=array.length-1;i<=0;i--){
-        return reverseArray.push((array[i]));
+    for(i=array.length-1;i>=0;i--){
+         reverseArray.push(array[i]);
     }
+    return reverseArray;
 }
 reverseArray([23,25,26,27]);
 console.log(reverseArray);
