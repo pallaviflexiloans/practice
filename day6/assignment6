@@ -1,0 +1,51 @@
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+];
+
+const mernStack = ['MongoDB', 'Express', 'React', 'Node'];
+var i = 0;
+while(i<countries.length){
+    console.log(countries[i]);
+    i++;
+}
+var j=0;
+do{
+    console.log(countries[i]);
+    i++; 
+}while(i<countries.length); //question1
+
+
+
+String = "#";
+for(let i=0;i<=7;i++){
+    console.log(String);
+    String+="#";
+}                            //question4
+
+number = 0;
+
+for( i=0;i<=10;i++){
+    console.log(number +" x   " + i +"   = " + number*i);
+    number++;
+}                //question5
+
