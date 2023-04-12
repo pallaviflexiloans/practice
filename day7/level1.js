@@ -61,29 +61,48 @@ function convertCelsiusToFahrenheit(oC){
 console.log("temperature in fahrenheit is " + convertCelsiusToFahrenheit(2)); //question12
 
 function calculateBMI (weightInKg,height){
-     bmi = weightInKg / (height * height);
-switch(bmi){
-    case 0:
-    bmi < 18.5;
-    console.log("Underweight");
-    break;
-    case 1:
-    18.5<bmi<24.9;
-    console.log("Normal");
-    break;
-    case 2:
-    25<bmi<29.9;
-    console.log("Overweight");
-    break;
-    case 3:
-    bmi>30;
-    console.log("Obese");
-    break;
+    bmi = weightInKg / (height * height);       
+    if( bmi < 18.5)
+        return "Underweight";
+    else if(18.5>=bmi<25)
+        return "Normal";
+    else if(25>=bmi<30)
+        return "Overweight";
+    else
+        return "Obese";
 }
+
+console.log("calling calculateBMI " + calculateBMI(55,5.5)); //question13 
+
+function checkSeason(month){
+    winter = ['January', 'February', 'March'];
+    spring = ['April', 'May', 'June'];
+    summer = ['July', 'August', 'September'];
+
+    if (winter.includes(month))
+        return season = 'winter'
+    else if (spring.includes(month))
+        return season = 'spring'
+    else if (summer.includes(month))
+        return season = 'summer'
+    else
+        return season = 'autumn'
 }
-console.log(calculateBMI(55,5.5)); //question13 not working
 
+console.log("calling checkSeason " + checkSeason("April")); //question14
 
+function findMax(firstNo,secondNo,thirdNo){
+    if(firstNo>secondNo && firstNo>thirdNo){
+        return firstNo;
+    }
+    else if(secondNo>firstNo && secondNo>thirdNo){
+        return secondNo;
+    }
+    else{
+        return thirdNo;
+    }
+}
+console.log("max no is : " + findMax(23,24,25));//question15
 
 
 
