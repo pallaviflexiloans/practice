@@ -51,13 +51,18 @@ function printArray(Array){
 }
 printArray([23,24,25,26,27]); //question3
 
-// function showDateTime(date){
-//     date = new date();
-//     console.log(date);
-//     console.log(date.getHours() + ":"+ date.getMinutes() + ":"+ date).getSeconds()
 
-// }
-// showDateTime(20/01/2023); //question4
+function showDateTime(){
+  var now = new Date();
+  var day = now.getDate();
+  var month = now.getMonth() + 1;
+  var year = now.getFullYear();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  console.log(day + "/" +  month +"/" + year + " " + hours + ":"+ minutes );
+}
+
+showDateTime(); //question4
 
 function swapValues(x,y){
    temp = x;
@@ -73,10 +78,11 @@ function reverseArray(Array){
 }
 reverseArray([23,25,26,27,28]);   //question6
 
-function capitalizeArray(Array){
+function capitalizeArray(array){
     upperArray=[];
-    for(i=0;i<Array.length;i++){
-        upperArray.push(Array[i].toUppercase());
+    for(i=0;i<array.length;i++){
+      // console.log(array[i]);
+      upperArray.push(array[i].toUpperCase());
     }
     return upperArray;
 }

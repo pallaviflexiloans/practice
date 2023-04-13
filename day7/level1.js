@@ -107,16 +107,18 @@ console.log("max no is : " + findMax(23,24,25));//question15
 
 
 
-
+ 
 
 
 function reverseArray( array ){
-    reverseArray = [];
+    var arr = [];
     for(i=array.length-1;i>=0;i--){
-         reverseArray.push(array[i]);
+        const valueAtIndex = array[i]
+        arr.push(valueAtIndex)
+         
     }
-    return reverseArray;
+    return arr;
 }
-reverseArray([23,25,26,27]);
-console.log(reverseArray);
+var arr = reverseArray([23,25,26,27]);
+console.log(arr);
 
