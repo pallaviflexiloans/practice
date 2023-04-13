@@ -54,7 +54,9 @@ function reverseCountries(countries){
     return reverseCountriesArray
     
 }
-console.log(reverseCountries(["india","finland","france"]));
+console.log(reverseCountries(["india","finland","france"])); //question20
+
+
 
 
 
