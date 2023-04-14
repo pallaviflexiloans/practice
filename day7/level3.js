@@ -60,3 +60,5 @@ console.log(reverseCountries(["india","finland","france"])); //question20
 
 
 
+
+
