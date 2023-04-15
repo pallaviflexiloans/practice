@@ -106,9 +106,18 @@ users1['pallavi'] =
         age: 30,
         isLoggedIn: false,
         points: 30
-    };
+    };      //question4
 
 //console.log(users1);
+
+user1Keys = Object.keys(users1);
+console.log(user1Keys); //question5
+
+user1Values = Object.values(users1);
+console.log(user1Values);  //question6
+
+
+
 
    
 
